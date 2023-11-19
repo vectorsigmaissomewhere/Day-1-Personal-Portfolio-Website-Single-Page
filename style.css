@@ -1,0 +1,99 @@
+html {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(252, 239, 192);
+  font-family: "Audiowide", sans-serif;
+
+}
+#bada-wala-container{
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+#image-container-1 {
+  position: relative;
+  background-color: none;
+  max-width: 70%;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+#image-container-1 img {
+  max-width: 100%;
+  border-radius: 90px 90px;
+  padding:0px 0ox 0px 0px;
+  background-color:none;
+}
+#image-container-2{
+  position:relative;
+  background-color:none;
+  max-width:70%;
+  padding-top:40px;
+  padding-left:20%;
+}
+#image-container-2 img{
+  max-width:100%;
+  border-radius:90px 90px;
+  padding:0px 0px 0px 0px;
+  background-color:none;
+}
+#image-container-1-text{
+  padding-left:50px;
+  position: relative;
+  animation-name:firstcontainer;
+  animation-duration:4s;
+  animation-delay:0s;
+}
+@keyframes firstcontainer{
+  0%{padding-left: 50%;}
+  25%{padding-left:-25%}
+  50%{padding-left:0%}
+  75%{padding-left:25%}
+  100%{padding-left:50%}
+}
+#image-container-1{
+  padding-left:0px;
+}
+#first-image-text{
+  display:flex;
+  flex-direction:column;
+}
+#second-image-text{
+  display:flex;
+  flex-direction:column;
+}
+#image-container-2{
+  padding-left: 0px;
+}
+#image-container-2-text{
+  padding-left:50px;
+  position:relative;
+  animation-name:secondcontainer;
+  animation-duration:4s;
+  animation-delay:0s;
+}
+@keyframes secondcontainer{
+  0%{padding-left: 50%;}
+  25%{padding-left:-25%}
+  50%{padding-left:0%}
+  75%{padding-left: 25%;}
+  100%{padding-left:50%}
+}
+@media only screen and (max-width:600px){
+  #bada-wala-container{
+    display:flex;
+    flex-direction:column;
+  }
+  #image-container-1{
+    max-width:100%;
+  }
+  img{
+    max-width:100%;
+    height:auto;
+  }
+    #image-container-2{
+      max-width:100%;
+    }
+}
